@@ -1,0 +1,762 @@
+/*-----------------------------------------------------------------------------------
+
+	Template Name: phototime
+	Template URI: http://www.softtech-it.com
+	Description: photo related template
+	Author: Mtm Sujan
+	Author URI: http://www.bappy.xyz
+	License: GNU General Public License version 3.0
+	License URI: http://www.gnu.org/licenses/gpl-3.0.html
+	Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+	1. Typography
+	2. Header Area
+		2.1 Menu Area
+		2.2 Welcome Text 
+		2.3 Social Media 
+	3. Getting Started
+		3.1 Text Area
+		3.2 Images Area
+	4. Design Area
+		4.1 Design
+		4.2 Design Text
+	5. Community Area
+		5.1 Flex Container
+	6. Subscribe Area
+		6.1 Subscribe
+	7. Download Area
+		7.1 Download
+		7.2 Mobile Store
+	8. Footer Area
+		8.1 Left Area
+		8.2 Right Area
+
+-----------------------------------------------------------------------------------*/
+
+
+/************** 1. Typography ************************/
+
+@font-face {
+	font-family: "gotham rounded";
+	src: url('fonts/gothamroundedbook.woff') format('woff');
+}
+
+body {
+	font-family: "gotham rounded";
+	font-size: 14px;
+	line-height: 1.3em;
+}
+
+h2 {
+	font-size: 28px;
+	text-transform: uppercase;
+	letter-spacing: 6px;
+}
+
+h3 {
+	color: #16a085;
+	letter-spacing: 2px;
+	font-size: 18px;
+	line-height: 25px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+h5 {
+	font-size: 16px;
+	font-weight: normal;
+	letter-spacing: 2px;
+}
+
+p {
+	font-size: 12px;
+	font-weight: normal;
+	letter-spacing: 1px;
+	line-height: 2em;
+	color: #9c9d9d;
+	margin-bottom: 30px;
+}
+
+.btn {
+	display: inline-block;
+	padding: 15px 30px;
+	text-decoration: none;
+	color: white;
+	font-size: 12px;
+	text-transform: uppercase;
+	background-color: #16a085;
+	border-radius: 2px;
+	letter-spacing: 1px;
+	border: 1px solid transparent;
+}
+
+.btn:hover {
+	background-color: #FFFFFF;
+	color: #16a085;
+	border: 1px solid #16a085;
+	transition: .5s;
+}
+
+/****** 2. Header Area *******/
+
+.header-area {
+	background: url('images/header-bg.jpg') no-repeat 0 0 / 100% 100%;
+	color: white;
+	text-align: center;
+	overflow: hidden; 
+	padding: 30px 0;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+/****** 2.1 Menu Area *******/
+
+.menu-area ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.menu-area ul li {
+	display: inline;
+	margin: 0 30px;
+}
+
+.menu-area ul li a {
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	font-size: 16px;
+	letter-spacing: 2px;
+	border-bottom: 1px solid transparent;
+	display: inline-block;
+	padding-bottom: 5px;
+}
+
+.menu-area ul li a:hover {
+	border-bottom: 1px solid white;
+	color: #16a085;
+}
+
+.menu-area ul .logo img {
+	margin: 0 30px;
+	width: 45px;
+	height: auto;
+}
+
+.menu-area ul .logo a {
+	border: none;
+}
+
+.menu-area ul .logo a:hover {
+	border: none;
+}
+
+/******** 2.2 Welcome Text *******/
+
+.welcome-text {
+	margin-top: 180px;
+}
+
+/****** 2.3 Social Media ******/
+
+.social-media {
+	margin-top: 180px;
+}
+
+.social-media ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.social-media ul li {
+	display: inline;
+	margin: 0 10px;
+}
+
+.social-media ul li a {
+	text-decoration: none;
+	color: white;
+	font-size: 24px;
+}
+
+@media screen and (max-width: 950px) {
+	.menu-area ul li {
+		margin: 0 20px 0 0;
+	}
+
+	.menu-area ul li:last-child {
+		margin: 0;
+	}
+
+	.menu-area ul li a {
+		text-decoration: none;
+		color: white;
+		text-transform: uppercase;
+		font-size: 16px;
+		letter-spacing: 2px;
+		border-bottom: 1px solid transparent;
+		display: inline-block;
+		padding-bottom: 5px;
+	}
+
+	.menu-area ul .logo img {
+		margin: 0 20px 0 20px;
+		width: 40px;
+		height: auto;
+	}
+
+	h2 {
+		font-size: 28px;
+		text-transform: uppercase;
+		letter-spacing: 4px;
+		line-height: 40px;
+	}
+
+	.social-media {
+		margin-top: 100px;
+	}
+
+	.welcome-text {
+		margin-top: 100px;
+	}
+}
+
+@media screen and (max-width: 684px) {
+
+	.menu-area ul li {
+		display: block;
+		margin: 0 0 20px 0;
+		text-align: left;
+	}
+	
+	.menu-area ul li a {
+		text-decoration: none;
+		color: white;
+		text-transform: uppercase;
+		font-size: 16px;
+		letter-spacing: 2px;
+		border-bottom: 1px solid transparent;
+		display: inline-block;
+		padding-bottom: 5px;
+	}
+
+	.menu-area ul .logo img {
+		margin: 20px 0 20px 0;
+		width: 40px;
+		height: auto;
+	}
+}
+
+/******* 3. Getting Started *******/
+
+.getting-started {
+	background-color: #f5f6f7;
+	overflow: hidden;
+}
+
+/******* 3.1 Text Area *******/
+
+.getting-started .text-area {
+    background-image: url('images/hand.png');
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    background-position: top right;
+    margin-top: 80px;
+	padding-bottom: 62px;
+}
+
+/******* 3.2 Start Text Area  *******/
+
+.getting-started .text-area .start-text {
+    width: 50%;
+}
+
+@media screen and (max-width: 1220px) {
+
+	.getting-started {
+		background-color: #f5f6f7;
+		background-image: url('images/hand.png');
+		background-repeat: no-repeat;
+		background-size: auto 70%;
+		background-position: bottom left;
+		overflow: hidden;
+	}
+	
+	.getting-started .text-area {
+		background: none;
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.getting-started .text-area .start-text p {
+		color: black;
+	}
+}
+
+@media screen and (max-width: 660px) {
+
+	.getting-started {
+		background-image: none;
+	}
+
+	.getting-started .text-area {
+		display: block;
+	}
+
+	.getting-started .text-area .start-text {
+		width: 100%;
+	}
+}
+
+/******* 4. Design Started *******/
+
+.design-area {
+	overflow: hidden;
+}
+
+/******* 4.1 Design *******/
+
+.design-area .design {
+	overflow: hidden;
+    background-image: url('images/mobile.png');
+    background-repeat: no-repeat;
+    background-size: 35% auto;
+    background-position: top left;
+	margin-top: 120px;
+}
+
+/******* 4.2 Design Text  *******/
+
+.design-area .design .design-text {
+	width: 40%;
+	float: right;
+	overflow: hidden;
+	margin-bottom: 80px;
+}
+
+.design-area .design .design-text .slide {
+	margin-top: 40px;
+	color: #373737;
+}
+
+.design-area .design .design-text .slide .arrow a i {
+	color: #000000;
+	font-size: 24px;
+	margin-right: 15px;
+}
+
+@media screen and (max-width: 976px) {
+
+	.design-area {
+		padding-top: 40px;
+	}
+
+	.design-area .design {
+		background-position: top left;
+		background-size: auto 60%;
+		display: flex;
+		justify-content: flex-end;
+		overflow: hidden;
+		margin-top: 0;
+		
+	}
+
+	.design-area .design .design-text {
+		width: 60%;
+		margin-bottom: 10px;
+	}
+
+	.design-area .design .design-text .slide {
+		margin-top: 10px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	
+	.design-area .design {
+		background-position: bottom right;
+		background-size: auto 40%;
+	}
+
+	.design-area .design .design-text {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+
+	.design-area {
+		padding: 40px 0;
+	}
+
+	.design-area .design {
+		background: none;
+	}
+
+	.design-area .design .design-text .slide {
+		display: none;
+	}
+}
+
+/******* 5. Community Area *******/
+
+.community-area {
+	background-color: #f5f6f7;
+	overflow: hidden;
+	padding: 100px 0;
+}
+
+.community-area .arrow-hidden {
+	display: none;
+}
+
+.community-area .arrow {
+	text-align: right;
+}
+
+.community-area .arrow a i {
+	margin: 3px 5px;
+	font-size: 24px;
+	font-weight: bold;
+	color: black;
+}
+
+/******* 5.1 Flex Container *******/
+
+.flex-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-container .community {
+	text-align: center;
+	margin-right: 50px;
+}
+
+.flex-container .community h3 {
+	color: black;
+}
+
+.flex-container .community p {
+	line-height: normal;
+}
+
+.flex-container .leaf {
+	margin-left: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+
+	.community-area {
+		padding: 50px 0;
+	}
+
+	.flex-container {
+		display: block;
+		text-align: center;
+	}
+
+	.flex-container .community {
+		text-align: center;
+		margin-right: 0;
+	}
+
+	.flex-container .leaf {
+		margin-left: 0;
+		margin-top: 10px;
+	}
+
+	.community-area .arrow {
+		display: none;
+	}
+
+	.community-area .arrow-hidden {
+		display: block;
+		text-align: center;
+	}
+
+	.community-area .arrow-hidden a i {
+		margin: 3px 5px;
+		font-size: 24px;
+		font-weight: bold;
+		color: black;
+	}
+}
+
+@media screen and (max-width: 460px) {
+	.flex-container .van img {
+		width: 100%;
+		height: auto;
+	}
+
+	.flex-container .leaf img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+/******* 6. Subscribe Area *******/
+
+.subscribe-area {
+	overflow: hidden;
+	background: url('images/subscribe-bg.jpg') no-repeat;
+	background-size: cover;
+	padding: 200px 0;
+}
+
+/******* 6.1 Subscribe *******/
+
+.subscribe {
+	text-align: center;
+	margin-top: 200px;
+}
+
+.subscribe h3 {
+	color: white;
+	font-size: 28px;
+	margin-bottom: 30px;
+}
+
+.subscribe form input[type="email"] {
+	padding: 15px;
+	color: black;
+	font-size: 18px;
+	border: 1px solid transparent;
+	border-radius: 3px 0 0 3px;
+}
+
+.subscribe form button {
+	background-color: #16a085;
+	margin: 0;
+	padding: 15.5px;
+	font-size: 18px;
+	color: white;
+	border: 1px solid transparent;
+	border-radius: 0 3px 3px 0;
+	margin-left: -4px;
+}
+
+.subscribe form button:hover {
+	cursor: pointer;
+	background-color: white;
+	color: #16a085;
+	border: 1px solid #16a085;
+	transition: 1s;
+}
+
+@media screen and (max-width: 640px) {
+
+	.subscribe-area {
+		padding: 0 0 100px 0;
+	}
+
+	.subscribe h3 {
+		line-height: 1.3em;
+	}
+}
+
+@media screen and (max-width: 360px) {
+
+	.subscribe {
+		margin-top: 40px;
+	}
+
+	.subscribe h3 {
+		font-size: 22px;
+	}
+
+	.subscribe form input[type="email"] {
+		display: block;
+		border-radius: 3px;
+		margin: 0 auto;
+	}
+
+	.subscribe form button {
+		display: block;
+		border-radius: 3px;
+		margin: 20px auto;
+		padding: 15px 50px;
+		font-size: 18px;	
+	}
+}
+
+/******* 7. Download Area *******/
+
+.download-area {
+	background-color: #f5f6f7;
+	overflow: hidden;
+	padding: 100px 0;
+}
+
+/******* 7.1 Download *******/
+
+.download-area .download {
+	text-align: center;
+}
+
+.download-area .download h3 {
+	margin: 0;
+	color: #373737;
+}
+
+.download-area .download p {
+	width: 90%;
+	margin: 0 auto;
+}
+
+/******* 7.2 Mobile Store *******/
+
+.download-area .mobile-store .store {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    text-align: center;
+	margin-top: 50px;
+}
+
+.download-area .mobile-store .store button {
+	background-color: #1abc9c;
+	text-transform: uppercase;
+	text-align: left;
+	padding: 20px 20px;
+	width: 25%;
+	color: white;
+	font-size: 16px;
+	border: 1px solid transparent;
+	border-radius: 3px 0 0 3px;
+}
+
+.download-area .mobile-store .store a {
+	background-color: #16a085;
+	text-decoration: none;
+	color: white;
+	margin-right: 20px;
+	border: 1px solid transparent;
+	border-radius: 0 3px 3px 0;
+}
+
+.download-area .mobile-store .store a i {
+	padding: 14px 20px;
+	font-size: 30px;
+}
+
+.download-area .mobile-store .store a:hover {
+	background-color: white;
+	color: #16a085;
+	border: 1px solid #16a085;
+	transition: 1s;
+}
+
+@media screen and (max-width: 785px) {
+
+	.download-area {
+		padding: 40px 0;
+	}
+
+	.download-area .mobile-store .store {
+		display: block;
+		margin-top: 10px;
+	}
+
+	.download-area .mobile-store .store button {
+		padding: 20px 20px;
+		margin: 20px;
+		width: 40%;
+	}
+
+	.download-area .mobile-store .store a {
+		padding: 21.6px 0 20px 0;
+		margin-left: -25px;
+		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 490px) {
+
+	.download-area .download h3 {
+		text-align: left;
+		margin-bottom: 20px;
+	}
+	.download-area .download p {
+		width: 100%;
+		text-align: left;
+		margin: 0;
+	}
+
+	.download-area .mobile-store .store button {
+		width: 80%;
+		border-radius: 3px;
+		text-align: center;
+	}
+
+	.download-area .mobile-store .store a {
+		display: block;
+		margin: 0 auto;
+		padding: 0;
+		width: 80%;
+		border-radius: 3px;
+	}
+}
+
+/******* 8. Footer Area *******/
+
+.footer-area {
+	background-color: white;
+	overflow: hidden;
+}
+
+/******* 8.1 Left Area *******/
+
+.footer-area .left-side {
+	float: left;
+	overflow: hidden;
+	margin-top: 50px;
+}
+
+.footer-area .left-side ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.footer-area .left-side ul li {
+	display: inline;
+	margin-right: 10px;
+	border-right: 2px solid #16a085;
+}
+
+.footer-area .left-side ul li:last-child {
+	border: none;
+}
+
+.footer-area .left-side ul li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #373737;
+	letter-spacing: 2px;
+	font-size: 14px;
+	margin-right: 10px;
+}
+
+.footer-area .left-side p {
+	text-transform: capitalize;
+	color: #373737;
+}
+
+/******* 8.2 Right Area *******/
+
+.footer-area .right-side {
+	text-align: right;
+}
+
+.footer-area .right-side img {
+	margin: 40px 0 20px 0;
+}
